@@ -9,53 +9,150 @@
 			<h1>Forms</h1>
 			<hr />
 				<nav>
-					<a href="">Overview</a>
-					<a href="">Forms Type & Tags</a>
-					<a href="">Text</a>
-					<a href="">Radio</a>
-					<a href="">Submit</a>
-					<a href="">Reset</a>
-					<a href="">Passsword</a>
-					<a href="">Checkbox</a>
-					<a href="">Select</a>
+					<a href="#Overview">Overview</a>
+					<a href="#Forms Type & Tags">Forms Type & Tags</a>
+					<a href="#Text">Text</a>
+					<a href="#Radio">Radio</a>
+					<a href="#Submit">Submit</a>
+					<a href="#Reset">Reset</a>
+					<a href="#Password">Passsword</a>
+					<a href="#Checkbox">Checkbox</a>
+					<a href="#Select">Select</a>
 				</nav>
-			<hr />
+					<hr />
 				<section>
 					<article id="Overview">
+						<h2 style="text-align:center">Overview</h2>
 					</article>
 					<hr />
 					
 					<article id="Forms Type & Tags">
+						<h2 style="text-align:center">Forms Type & Tags</h2>
+							<table border="1" width="90%">
+								
+								<tr bgcolor="white">
+									<th style="color:black">Form Tags Name</th>
+									<th style="color:black">Purpose</th>
+								</tr>
+								<tr>
+									<td>Form open & close tag</td>
+									<td>Marks begining and end of form tag.</td>
+								</tr>
+								<tr>
+									<td>Input</td>
+									<td>repersents some type of input element base on its type.</t>
+								</tr>
+								<tr>
+									<td>Select</td>
+									<td>makes the beginning and end of a drop-down list</td>
+								</tr>
+								<tr>
+									<td>option</td>
+									<td>Marks the befing and end of an option the drop-down list</td>
+								</tr>
+								<tr>
+									<td>Textarea</td>
+									<td>Marks the beginning and end of a multi-line text input box</td>
+							</table>
 					</article>
 					<hr />
 					
 					<article id="Text">
+						<h2 style="text-align:center">Text<h2>
+							<p>This is how to creat a text form</p>
+								<form action="http://google.com" Method="get">
+								Text input:<input type="text" name="mytextInput" required/><br />
+								<input type="submit" value="post"><input type="reset">
+								</form>
+						
 					</article>
 					<hr />
 					
 					<article id="Radio">
+						<h2 style="text-align:center">Radio</h2>
+							<form action="Radio.html" method="post">
+								Do you love me?<br />
+									<input type="radio" name="answer" value="yes"/>Yes<br />
+									<input type="radio" name="answer" value="no"  />No<br />
+									<input type="radio" name="answer" value="maybe" checked />maybe<br />
+										<input type="submit" value="Enter"/><input type="reset">
+							</form> 
+							<form action="booty.html" method="get">
+								I eat the booty like groceries.<br />
+									<input type="radio" name="answer" value="Strongly agree" checked />Strongly Agree<br />
+									<input type="radio" name="answer" value="Agree"/>Agree<br />
+									<input type="radio" name="answer" value="Undecide"/>Undecide<br />
+									<input type="radio" name="answer" value="Disagree"/>Disagree<br />
+									<input type="radio" name="answer" value="Strongly disagree"/>Strongly disagree<br />
+									<input type="submit"><input type="reset">
+							</form>
+							
 					</article>
 					<hr />
 					
 					<article id="Submit">
+						<h2 style="text-align:center">Submit</h2>
+							<form action="submit.html" Method="post">
+								<input type="submit" value="Click Me"/><br />
+							</form>
 					</article>
 					<hr />
 				
 					<article id="Reset">
+						<h2 style="text-align:center">Reset</h2>
+						<form action="reset.html" method="post">
+							<input type="reset" value="over">
+						</form>
 					</article>
 					<hr />
 				
-					<article id="Passsword">
+					<article id="Password">
+						<h2 style="text-align:center">Passsword</h2>
+								<form action="Login.html" method="post">
+									Username:<input type="text" name="mytextInput"/><br />
+									Passsword:<input type="password" name="userpassword" /><br />
+										<input type="submit" value="enter"><input type="reset"><br />
+								</form>
 					</article>
 					<hr />
 				
 					<article id="Checkbox">
+						<h2 style="text-align:center">Checkbox</h2>
+							<form action="Checkbox" method="post">
+								What do you like to do?<br />
+														<input type="checkbox" name="mycheckbox" value="Video Games"/>Video Games<br />
+														<input type="checkbox" name="mycheckbox" value="Sports" />Sports<br />
+														<input type="checkbox" name="mycheckbox" value="Movies" />Movie<br />
+														<input type="checkbox" name="mycheckbox" value="Anime" />Anime<br />
+														<input type="submit"><input type="reset">
+							</form>
 					</article>
 					<hr />
 				
 					<article id="Select">
-					</article>
+						<h2 style="text-align:center">Select</h2>
+							<form action="selection.html" method="post">
+								<select name="Phone OS"/><br />
+									<option value="--select--" checked />--Select--</option>
+									<option value="Android">Android</option>
+									<option value="iOS">iOS</option>
+									<option value="windows">Windows Mobile</option>
+									<option value="WebOS">Web OS</option>
+								</select><br />
+								<input type="submit"/><input type="reset">
+											
+							</form>			
+								
+							
+					</article>					
 					<hr />
+					<article id="Textarea">
+						<h1 style="text-align:center">Textarea<h1>
+							<Form action="textarea" method="post">
+								<textarea name="briefdescription"></textarea><br />
+								<input type="submit"/><input type="reset"/>
+							</form>
+					</article>
 		</main>
 	</body>	
 </html>
