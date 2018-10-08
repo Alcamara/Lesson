@@ -1,16 +1,38 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Flying Dragon Menu</title>
+		<title>Flying Dragon Contact</title>
 	</head>
-	<body style="background-color:red; font-family:times;">
-		<h1 style="color:green;text-align:center">Flying Dragon</h1>
+	<body style="background-color:red; font-family:times;text-align:center">
+		<h1 style="color:green;">Flying Dragon</h1>
 		<hr />
 			<a href="resturant.html">Home</a>
 			<a href="Menu.html">Menu</a>
 			<a href="ContactUs.html">Contact Us</a>
 		<hr />
-			
+			<form style="text-align:center" action="order.html" method="post">
+				Name: <input type="text" name="myname"><br />
+				Email: <input type="text" name="myemail"><br />
+				Phone: <input type="text" name="myphonenumber"><br />
+				Reason for Inquiry:
+					<select name="Reason">
+						<option value="Catering" checked />Catering</option>
+						<option value="Private Party" />Private Party</option>
+						<option value="Feedback" />Feedback</option>
+						<option Value="Other" />Other</option>
+					</select><br />
+				Have you been to the restaurant?: 
+					<input type="radio" name="mychoice" value="No">No
+					<input type="radio" name="mychoice" value="yes">Yes <br />
+				Best Days to contact you: 
+					<input type="checkbox" name="mybox" Value="M">M
+					<input type="checkbox" name="mybox" Value="T">T
+					<input type="checkbox" name="mybox" value="W">W
+					<input type="checkbox" name="mybox" Value="Th">Th
+					<input type="checkbox" name="mybox" value="F">F <br />
+					<input type="submit" value="Send Request">
+				
+			</form>
 		<hr />
 	</body>
 		<footer style="text-align:center">
